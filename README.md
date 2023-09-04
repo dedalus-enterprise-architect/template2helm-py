@@ -12,7 +12,26 @@ It follows the OS tools requirements:
 - docker 20+
 - helm 3+
 
-## Installation
+### Project Dependencies
+
+- [template2helm](https://github.com/dedalus-enterprise-architect/template2helm/tree/ea_team_crd) (Dedalus Version)
+- [ea-utils image](public.ecr.aws/dedalus-ea/ea-utils:v4-5) as docker image
+
+## Usage
+
+It follow the step list covered by this script:
+
+1. get the aws ecr token
+
+1. get the Openshift Template
+
+1. convert the oc template to an helm base schema
+
+1. create the helm package
+
+1. (commented) push the helm package
+
+### Installation
 
 Install the dependencies with *pip*:
 
@@ -20,16 +39,19 @@ Install the dependencies with *pip*:
 pip install requirements.txt
 ```
 
-Run the script:
+### Run
 
 ```bash
 python init.py
 ```
 
-## Script Parameters
+The script is interactive and will ask you for some information better explained on the next sub paragraph.
+
+### Script Parameters
 
 The initial execution of the script will fill a file named: "*config.json*" with the following keys:
 
+```json
 {
     "access_key_id": "",
     "secret_access_key": "",
