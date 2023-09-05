@@ -4,9 +4,11 @@
 
 _template2helm-py_ is a __Pythonic__ utility that help to converts _OpenShift Templates_ into _Helm Charts_ fastest.
 
-A command-line script to login to an EKS cluster providing the basic information to connect and letting the script work for you. The actual configuration will be saved in a __config.json__ file, to allow later connection to work without user input.
+A command-line script to run all the steps summarized at _Usage_ paragraph ahead providing the basic information to run each command in the list and letting the script work for you.
 
-The main advantage in using this project is getting started with a very first draft of the Helm Chart starting from an Openshift Template.
+The actual configuration will be saved in a __config.json__ file, to allow later connection to work without user input.
+
+The main advantage in using this script is getting started with a very first draft of the Helm Chart starting from an Openshift Template.
 
 ## Requirements
 
