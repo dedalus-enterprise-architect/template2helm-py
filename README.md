@@ -21,7 +21,7 @@ It follows the OS tools requirements:
 ### Project Dependencies
 
 - [template2helm](https://github.com/dedalus-enterprise-architect/template2helm/tree/ea_team_crd) (Dedalus Version)
-- [ea-utils image](public.ecr.aws/dedalus-ea/ea-utils:v4-5) as docker image
+- [ea-utils image](https://gallery.ecr.aws/dedalus-ea/ea-utils): pick the latest
 
 ## Usage
 
