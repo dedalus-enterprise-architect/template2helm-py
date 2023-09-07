@@ -15,8 +15,8 @@ The main advantage in using this script is getting started with a very first dra
 It follows the OS tools requirements:
 
 - python 3.5+
-- docker 20+
-- helm 3+ (optional)
+- [docker](https://docs.docker.com/engine/install/) 20+ is required to run the template2helm [binary](https://download.docker.com/linux/static/stable/x86_64/) and its dependencies from within a container
+- [helm 3+](https://helm.sh/docs/intro/install/#from-the-binary-releases)
 
 ### Project Dependencies
 
@@ -42,7 +42,7 @@ It follow the step list covered by this script:
 Install the dependencies with *pip*:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Run
