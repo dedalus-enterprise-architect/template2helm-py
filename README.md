@@ -31,15 +31,15 @@ It follow the step list covered by this script:
 
 1. get the Openshift Template
 
-1. convert the oc template to an helm base schema
+1. convert the oc template to a helm chart base schema
 
-1. create the helm package
+1. create the helm package (folder tree + archive)
 
 1. (disabled feature) push the helm package
 
 ### Installation
 
-Install the dependencies with *pip*:
+Install the dependencies with _pip_:
 
 ```bash
 pip install -r requirements.txt
@@ -93,3 +93,9 @@ where if follows the parameters meaning:
 - __project_version__ : specify here the helm chart version
 
 - __github_pat__ : this is the *github_pat* as required by the Helm Chart Repository on GitHub (OPTIONAL)
+
+### Conclusion
+
+At the end of this procedure you'll get a helm chart package in a draft status because it needed to complete with the customization your product needs.
+
+for more information, please see the [link](https://confluence.dedalus.com/x/Doz3C)
